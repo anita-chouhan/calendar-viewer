@@ -1,0 +1,38 @@
+This file to provide information if you want to upgrade current code base.
+
+Folder Structure:
+assets
+	-css : All css files are stored here
+	-js : All js files are stored here
+	-data: Sql dump to create database is stored here
+
+--------------------------------------------------------
+Files: 	
+	index.php -- Main File
+	api.php -- File to load data from database
+	custom.css -- Custom styles are added here
+	fullcalendar.min.css -- Minified fullcalendar css file
+	custom.js -- Custom Javascript code is here
+	fullcalendar.min.js -- Minified fullcalendar js file
+	jquery.min.js -- Minified jquery file
+	events.sql -- Database dump from Mysql
+
+---------------------------------------------------------
+External Libraries Used:
+FullCalendar : https://fullcalendar.io/
+JQuery : https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
+
+----------------------------------------------------------
+Versions Used:
+FullCalendar: 5
+JQuery: 3.6.0
+Mysql: 5.0.2
+PHP: 7.4.9
+
+----------------------------------------------------------
+Setup using XAMPP(7.4.9):
+1. Create a database with name events and create a table test to it.
+2. Import the events.sql file form data folder in the test table.
+3. Put the provided codebase in htdocs folder of your XAMPP setup.
+4. Modify the database connection strings in api.php if needed.
+5. Visit the localhost url for your setup.
